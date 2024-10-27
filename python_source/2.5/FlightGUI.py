@@ -8,7 +8,7 @@ from PIL import Image, ImageTk
 import io
 import tkinter.font as tkFont
 
-# Parameters
+
 n_steps = 2
 batch_size = 32
 temperature = 1.0
@@ -165,7 +165,7 @@ def set_favicon(window, base64_string):
     try:
         icon_data = base64.b64decode(base64_string.split(",")[1])
         icon_image = Image.open(io.BytesIO(icon_data))
-        icon_image = icon_image.resize((16, 16))  # No need for ANTIALIAS
+        icon_image = icon_image.resize((16, 16))  
         icon_photo = ImageTk.PhotoImage(icon_image)
         window.iconphoto(False, icon_photo)
     except Exception as e:
