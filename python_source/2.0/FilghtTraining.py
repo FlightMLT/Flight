@@ -117,7 +117,7 @@ def run_model():
     if dataset:
         try:
             model.fit(dataset, epochs=1, steps_per_epoch=steps_per_epoch)
-            result = complete_text("t", n_chars=50)  # Only pass text and n_chars
+            result = complete_text("t", n_chars=50)  
             result_label.config(text="Generated Text: " + result)
         except Exception as e:
             print(f"Error during model fitting: {e}")
@@ -127,10 +127,10 @@ def run_model():
 
 def generate_text():
     try:
-        seed_text = root_text_entry.get()  # Get the initial text from the text entry box
+        seed_text = root_text_entry.get()  
         if not seed_text:
-            seed_text = "The "  # Default text if entry is empty
-        result = complete_text(seed_text, n_chars=100)  # Generate 100 characters of text
+            seed_text = "The " 
+        result = complete_text(seed_text, n_chars=100)  
         result_label.config(text="Generated Text: " + result)
     except Exception as e:
         print(f"Error generating text: {e}")
