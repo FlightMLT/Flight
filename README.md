@@ -1,4 +1,10 @@
 # Flight
 Machine Learning made easy!
 
-[Flight website](flightai.getinspiredflight.com)
+Main website:
+
+flightai.getinspiredflight.com
+
+Wiki:
+
+flightwiki.getinspiredflight.com
